@@ -7,7 +7,11 @@ public class XDebug extends Debug {
 
 
     public static void log(String msg) {
-        log(null, msg, ENABLE);
+        log(msg, ENABLE);
+    }
+
+    public static void log(String msg, boolean force) {
+        log(null, msg, force);
     }
 
     public static void log(Class<?> clazz, String msg) {
