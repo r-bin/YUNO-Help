@@ -12,7 +12,7 @@ import de.robv.android.xposed.XposedHelpers;
 public class XPermissionGranter {
     public static final boolean DEBUBG = false;
 
-    private static Vector<PermissionDemander> s_demanderList = new Vector<>();
+    private static final Vector<PermissionDemander> s_demanderList = new Vector<>();
     private static boolean s_tilt = false;
 
     // EVENT
